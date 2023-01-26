@@ -5,14 +5,11 @@ first = "first"
 second = "Second"
 # setting thenumbers of matrix
 while init:
-
     N_matrix = int(input("Enter number of matrices: "))
     count = 1    
     on = True
 
-
 # taking the input form the user
-
     while count <= 2:
         print(f'enter the info of the {first if count < 2 else second} matrix. ')
         N_rows = int(input("Enter number of rows: "))
@@ -26,9 +23,7 @@ while init:
         elif count == 2:
             len_rows = len(matrix_Y)
 
-
 # Sorting the inputs into 2D List
-
         # the first for loop creates the rows
         for i in range(len_rows):
         # the second row creates the columns
@@ -47,18 +42,14 @@ while init:
         elif N_matrix == 2:
             count += 1
 
-
 # dislying the matrix before the calculation
-
     if N_matrix == 2:
         print(matrix_X)
         print(matrix_Y)
     elif N_matrix == 1:
         print(matrix_X)
 
-
 #performig the calculation and and displing the new matrix
-
     OP = int(input("What op you want to perform?\n1-Addtion.\n2-Subtraction.\n3-Multipication.\n4-Scaller Multipliation.\n5-Transpose.\n"))
     if OP == 1:
         try:
@@ -87,9 +78,7 @@ while init:
             pass
         print(np.transpose(matrix_X))
 
-
 # asking the user to redo the opreation
-
     try:
         closing = int(input("\nDo you want to perform another calculation?\n1-yes\n2-no\n"))
         if closing == 2:
